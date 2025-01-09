@@ -19,6 +19,12 @@ function App() {
       setContacts([...contacts, {id: uuidv4(), ...contact}]);
     };
 
+    const removeContactHandler = (id) =>{
+      const newContactList = contacts.filter((contact) =>{
+        return contact.id !== id; 
+      });
+      setContacts(newContactList);
+    };
     
   // Save contacts to localStorage whenever the state changes
   useEffect(() => {
@@ -30,7 +36,7 @@ function App() {
     <div className="ui container">
       <Header />
       <AddContact addContactHandler={addContactHandler} />
-      <ContactList contacts={contacts} />
+      <ContactList contacts={contacts} getContactId={removeContactHandler} />
     </div>
   );
 }
