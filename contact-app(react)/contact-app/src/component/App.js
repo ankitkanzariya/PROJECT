@@ -16,13 +16,15 @@ function App() {
 
     // Add a new contact to the list
     const addContactHandler = (contact) => {
-      setContacts([...contacts, {id: uuidv4(), ...contacts}]);
+      setContacts([...contacts, {id: uuidv4(), ...contact}]);
     };
 
+    
   // Save contacts to localStorage whenever the state changes
   useEffect(() => {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(contacts));
   }, [contacts]);
+
 
   return (
     <div className="ui container">
@@ -34,5 +36,6 @@ function App() {
 }
 
 export default App;
+
 
 
