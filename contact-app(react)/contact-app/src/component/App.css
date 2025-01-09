@@ -1,0 +1,138 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+.ui.fixed.menu {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.ui.container.center h2 {
+  margin: 0;
+  text-align: center;
+}
+
+/* Main container styles */
+.ui.main {
+  margin: 80px auto; /* Push content below the fixed header */
+  padding: 20px;
+  max-width: 800px;
+  width: 90%; /* Adjust for smaller screens */
+}
+
+/* Form styles */
+.ui.form {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ui.form .field {
+  margin-bottom: 15px;
+}
+
+.ui.form input[type="text"],
+.ui.form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ui.form .ui.button.blue {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ui.form .ui.button.blue:hover {
+  background-color: #0056b3;
+}
+
+/* ----------------Contact list item ni css  */
+.ui.celled.list .item {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Push content to left and icon to right */
+  align-items: center; /* Vertically center items */
+  padding: 10px 15px;
+}
+
+.ui.celled.list .item .content {
+  flex-grow: 1; /* Allow content to take up available space */
+}
+
+.ui.celled.list .item i.icon {
+  color: red; /* Optional: Make the icon red */
+  cursor: pointer; /* Pointer cursor for the icon */
+}
+/* ---------------------------------------------- */
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Header text size */
+  .ui.container.center h2 {
+    font-size: 18px;
+  }
+
+  /* Adjust main content padding */
+  .ui.main {
+    margin: 70px auto; /* Slightly less margin for smaller screens */
+    padding: 15px;
+  }
+
+  /* Adjust form field spacing */
+  .ui.form {
+    padding: 15px;
+  }
+
+  .ui.form input[type="text"],
+  .ui.form input[type="email"] {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Header text size */
+  .ui.container.center h2 {
+    font-size: 16px;
+  }
+
+  /* Adjust main content width */
+  .ui.main {
+    width: 95%;
+    margin: 60px auto;
+  }
+
+  .ui.form {
+    padding: 10px;
+  }
+
+  .ui.form .ui.button.blue {
+    width: 100%; /* Full width button on mobile */
+    text-align: center;
+  }
+}
+
