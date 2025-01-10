@@ -9,7 +9,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  margin: 0;
+  margin-top: 5rem;
   padding: 0;
 }
 
@@ -17,9 +17,10 @@ body {
 .ui.fixed.menu {
   background-color: #333;
   color: #fff;
-  padding: 10px 0;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 15px;
   position: fixed;
-  top: 0;
   width: 100%;
   z-index: 100;
 }
