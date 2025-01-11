@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 /* Global body styles */
 body {
   font-family: Arial, sans-serif;
@@ -20,6 +21,7 @@ body {
   text-align: center;
   padding: 10px;
   margin-bottom: 15px;
+  
   position: fixed;
   width: 100%;
   z-index: 100;

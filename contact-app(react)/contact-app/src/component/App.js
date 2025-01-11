@@ -35,14 +35,17 @@ function App() {
 
   return (
     <div className="ui container">
-      <Header />
-      <AddContact addContactHandler={addContactHandler} />
-      <ContactList contacts={contacts} getContactId={removeContactHandler} />
+    <Router>
+    <Header />
+      <Switch>
+        <Route path="/" exact component={ContactList} /> 
+        <Route path="/add" component={AddContact} />         
+      </Switch> 
+      </Router>
     </div>
   );
 }
 
 export default App;
 
-
-
+// 57mn
