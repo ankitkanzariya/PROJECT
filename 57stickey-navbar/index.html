@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>steacky...!</title>
+    <style>
+      body {
+        margin: 0px;
+        /* padding: 0 100px; */
+      }
+      #header {
+        text-align: center;
+      }
+      #logo {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 1px solid yellow;
+      }
+      #menu-bar {
+        text-align: center;
+        background-color: rgb(202, 202, 202);
+        color: rgba(23, 8, 8, 0.774);
+      }
+      li {
+        display: inline-block;
+        padding: 10px 10px;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      #container {
+        text-align: center;
+        padding: 50px 100px;
+      }
+      #about-img {
+        width: 100%;
+      }
+      .sticky {
+        position: fixed;
+        width: 100%;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <img
+        src="elephant-mascot-illustration-logo-design_343694-3474.avif"
+        alt=""
+        id="logo"
+      />
+    </div>
+
+    <nav id="menu-bar" class="sticky">
+      <li>home</li>
+      <li>about</li>
+      <li>our-team</li>
+      <li>client</li>
+      <li>contact us</li>
+    </nav>
+    <div class="color-switch">
+        <span><input id="colorpicker" type="color" onclick="changeCLR()" /></span>
+        <span><input id = "color-picker" type = "color" "></span>
+     
+        <span><input type="submit"/></span>
+      </div>
+    <div id="container">
+      <h1>about us</h1>
+      <img src="../56bg-color-chnge/download.jpeg" alt="" id="about-img" />
+    </div>
+    <p id="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sunt
+      voluptatibus quas quam dolorem nostrum recusandae aliquam dignissimos,
+      autem harum. Perferendis necessitatibus unde sequi explicabo ad fuga
+      quisquam cumque? Unde asperiores, necessitatibus molestiae mollitia
+      suscipit non nemo magnam tempora. Repudiandae ducimus maxime id repellat?
+      Nam iusto a, eligendi tenetur ullam, harum deserunt officia optio in dicta
+      velit sapiente omnis itaque odio quisquam quas nisi quibusdam! Reiciendis
+      odit velit, commodi, voluptatibus temporibus nostrum facere, hic cum
+      laboriosam aperiam voluptate. Neque perspiciatis tempore rem aut quam
+      debitis voluptas ea facere sunt nam fugit exercitationem excepturi
+      obcaecati hic reiciendis omnis, quisquam vitae sint ipsam sapiente optio
+      aliquid a vero porro! Minus numquam hic eaque mollitia eveniet debitis
+      earum, eos quas eum pariatur possimus exercitationem ipsam, aperiam
+      incidunt reprehenderit? Voluptate ullam minus odio eaque molestiae
+      repudiandae et maiores tempora fugiat dolor saepe nisi ea laudantium neque
+      odit, expedita error minima enim, quas doloribus soluta. Dolore fugiat
+      quasi rem provident natus fuga, distinctio nam enim numquam iste
+      voluptatibus vero facere nisi quaerat dolorem harum voluptatem expedita
+      odit placeat incidunt exercitationem illum laudantium, aliquid a! Quod
+      architecto veritatis nesciunt nam accusantium deserunt excepturi. Quas
+      fugit nulla explicabo est, sunt velit? Ipsa accusamus sit dignissimos iste
+      hic dolore magnam asperiores sed ex fugit facere, corrupti repellat
+      reiciendis in atque deleniti voluptatibus. Ratione neque nostrum excepturi
+      aspernatur unde ut minima, reprehenderit perspiciatis temporibus possimus
+      quisquam animi cupiditate rem magni veniam facere, asperiores fuga earum
+      exercitationem blanditiis aperiam molestiae corporis rerum fugiat! Modi
+      placeat tempore excepturi reprehenderit ad, eligendi obcaecati, ab nobis
+      adipisci reiciendis, alias asperiores architecto quis molestiae dicta
+      maxime voluptates amet nulla nesciunt atque numquam rem vitae? Aut ipsa
+      magnam unde tempore consequatur perferendis facilis alias nobis dolor
+      aliquam. Explicabo architecto corrupti debitis eum in sequi officiis!
+      Maxime, dolorem voluptatum? Eum cumque aperiam magni. Sint, non quo?
+    </p>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        let navbar = document.getElementById("menu-bar");
+        if (window.pageYOffset >= 190) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      });
+
+      //body
+
+      function changeCLR() {
+        let color = document.getElementById("colorpicker").value;
+        document.body.style.backgroundColor = color;
+      }
+
+      ///text change mate.....
+
+      let txt = document.getElementById("text");
+      let picker2 = document.getElementById("color-picker");
+
+      picker2.addEventListener("input", (event) => {
+        txt.style.color = event.target.value;
+      });
+
+      //
+
+    
+
+    </script>
+  </body>
+</html>

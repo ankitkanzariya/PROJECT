@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="container">
+
+        <div class="gradient-section">
+            <div class="gradient"></div>
+            <div class="gradient-content">
+                <h1 class="heading">welcome to our <span>CREATIVE</span>hub</h1>
+                <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis tenetur nesciunt consequuntur impedit alias mollitia?</p>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>hii friends</h2>
+            <p>welcome to our eamil sender</p>
+
+            <form>
+                <div class="form-group">
+                    <label for="to">To:</label>
+                    <input type="text" id="to" required autocomplete="off"
+                    placeholder="jene mklvu hoi anu">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" required autocomplete="off" placeholder="Addsubject">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" autocomplete="off"
+                    required placeholder="message"></textarea>
+                </div>
+
+                <div class="from-group result-container">
+                    <p class="resault">email send succesfully.....</p>
+                    <button type="button" class="send-btn">send-email</button>
+                  </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>>
+    <script src="script.js"></script>
+</body>
+</html>

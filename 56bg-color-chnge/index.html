@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bg-changer</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 20px 100px;
+      }
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
+      p {
+        font-size: 20px;
+        text-align: justify;
+      }
+
+      .color-switch {
+        text-align: centr;
+      }
+      input {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="color-switch">
+      <span><input id="colorpicker" type="color" onclick="changeCLR()" /></span>
+      <span><input id = "color-picker" type = "color" "></span>
+    </div>
+
+    <h1>About us</h1>
+    <img src="download.jpeg" alt="" />
+
+    <p id="text">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
+      voluptate doloremque vero adipisci pariatur harum, aliquam, at et minus
+      fuga exercitationem earum accusantium commodi? Sequi reiciendis quisquam
+      voluptatum accusamus modi, dolorem consectetur temporibus magni eos ab
+      quasi nostrum error illo. Praesentium fugiat ipsum minima? Porro omnis
+      cumque impedit velit placeat autem repellat blanditiis! Ipsum natus
+      incidunt nostrum aliquam aut saepe temporibus sit, dolorum dolor
+      veritatis, fuga illo reprehenderit blanditiis, eius facere! Iure ea quidem
+      incidunt ut velit voluptate laudantium tempora pariatur sequi excepturi,
+      quod praesentium repellat! Quo blanditiis, doloremque, ducimus facilis
+      impedit soluta vitae, illum repudiandae distinctio aperiam odio
+      consequuntur! Amet iusto perferendis nihil suscipit non magnam enim.
+      Dolores aut facilis cupiditate reiciendis rem ab obcaecati ipsum magni
+      velit illum dolore nulla porro iure, beatae deleniti quidem nemo
+      laboriosam quia architecto distinctio debitis itaque! Totam distinctio
+      suscipit ipsam tempora fugit laborum. Aliquid praesentium magni blanditiis
+      maiores dignissimos aspernatur rerum nam optio. Dolore tempora ipsum
+      repellendus dolorum fugit pariatur facilis perspiciatis deserunt
+      similique, qui voluptatibus suscipit inventore ea reiciendis, facere
+      expedita amet optio hic? Qui, omnis velit aliquid ab perferendis soluta
+      expedita itaque eligendi, sit ducimus harum corrupti ad alias reiciendis
+      suscipit quisquam? Nobis quo eos maxime cumque provident ullam, aut
+      asperiores alias sed nihil quaerat esse velit assumenda rerum quidem
+      iusto, labore nulla voluptatibus rem magni molestias unde animi quae
+      expedita? Minus, hic ab praesentium consectetur aliquid voluptatibus
+      dolorem quaerat nihil sed facilis distinctio nesciunt amet repudiandae
+      optio quidem ullam asperiores nobis iusto accusamus a. Labore, natus hic
+      tenetur illo, excepturi saepe distinctio atque voluptas quidem
+      exercitationem id assumenda reprehenderit? Consectetur et voluptatem
+      possimus ex, molestias quos repudiandae autem perferendis quisquam natus.
+      Aut, delectus illum? Nostrum a sed amet quasi velit ut minus quod illo
+      quisquam illum tempore eum, facere provident eius minima nihil maiores
+      totam impedit, molestiae tempora dolorem. Totam quo ex hic voluptatem
+      repellendus omnis temporibus dolorem pariatur dolore, officia, nostrum
+      earum. Illum voluptatum at quo accusantium eligendi nulla vero, tempore
+      eos inventore, laborum eveniet, necessitatibus iure pariatur aperiam
+      tenetur maiores enim quam. Alias dolorem similique atque quibusdam
+      repellat sapiente minus eaque, neque vitae! Similique eius sunt odit ad,
+      officiis, consectetur laborum aliquid autem ipsa officia laudantium. Esse
+      veritatis dolorum qui nostrum iusto impedit quasi odio illo fugit.
+      Voluptates placeat omnis quas vero provident, harum amet porro, sunt
+      maiores vel aperiam, numquam aut nihil ducimus nobis? Ullam, officia
+      tenetur a dolore provident dignissimos est minus animi consectetur
+      voluptatum eaque voluptate recusandae eligendi quia fugiat quas quis,
+      quisquam, enim sint nobis quae architecto eveniet unde minima? Voluptates
+      at exercitationem quis quia ea hic qui consectetur sint necessitatibus
+      illum, tempora doloribus eligendi beatae velit magni dicta maxime.
+      Deserunt distinctio soluta repudiandae repellendus ipsam architecto
+      eveniet nulla nesciunt ea facere iure commodi numquam porro modi eligendi
+      optio, quibusdam aut neque! Repellendus ex minima sed. Eaque quis delectus
+      at, libero magni distinctio aperiam esse a pariatur ab nobis voluptatum
+      quibusdam cupiditate. Exercitationem veniam sapiente et rem reprehenderit
+      aliquam ratione quo impedit, adipisci, commodi perferendis voluptatem
+      libero? Beatae sapiente cumque officia nihil rem?
+    </p>
+
+    <script>
+      ////body mate......
+      function changeCLR() {
+        let color = document.getElementById("colorpicker").value;
+        document.body.style.backgroundColor = color;
+      }
+
+      ///text change mate.....
+
+      let txt = document.getElementById("text");
+      let picker2 = document.getElementById("color-picker");
+
+      picker2.addEventListener("input", (event) => {
+        txt.style.color = event.target.value;
+      });
+
+////
+
+// jo color-picker j id text ma aapel 6 te input ma onclick="changeclr1()" aapo to aa niche nu run thase...
+
+      //   let colorPicker;
+      //   const defaultColor = "#0000ff";
+
+      //   window.addEventListener("load", startup, false);
+
+      //   function startup() {
+      //     colorPicker = document.querySelector("#color-picker");
+      //     colorPicker.value = defaultColor;
+      //     colorPicker.addEventListener("input", updateFirst, false);
+      //     colorPicker.addEventListener("change", updateAll, false);
+      //     colorPicker.select();
+      //   }
+
+      //   function updateFirst(event) {
+      //     const p = document.querySelector("p");
+      //     if (p) {
+      //       p.style.color = event.target.value;
+      //     }
+      //   }
+
+      //   function updateAll(event) {
+      //     document.querySelectorAll("p").forEach((p) => {
+      //       p.style.color = event.target.value;
+      //     });
+      //   }
+    </script>
+  </body>
+</html>

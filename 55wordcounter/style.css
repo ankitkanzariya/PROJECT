@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(219, 206, 232);
+    padding: 50px 100px;
+}
+h1{
+    text-align: center;
+    background-color: rgb(16, 42, 64);
+    color: wheat;
+    padding: 10px;
+}
+textarea{
+    width: 99%;
+    border: 2px solid  rgb(39, 39, 114) ;
+    font-size: 17px;
+    
+    /* border-style: outset ; */
+}
+p{
+    text-align: center;
+    background-color: brown;
+    color: wheat;
+    font-size: 25px;
+    padding: 12px;
+    margin: 0%;
+
+}
