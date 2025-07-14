@@ -1,6 +1,11 @@
-venv/
 __pycache__/
-*.pyc
+*.py[cod]
+*.sqlite3
+*.log
+*.env
+.env
 db.sqlite3
 media/
-.env
+uploads/
+*.DS_Store
+node_modules/
