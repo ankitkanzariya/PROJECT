@@ -1,0 +1,12 @@
+api/----- just for an welcome script
+api/register------new user 
+api/token------ login get token
+api/slots---- create slots
+
+
+
+
+---------admin login ------------------------------
+admin : naman
+password: 12345
+gmail: naman@gmail.com
